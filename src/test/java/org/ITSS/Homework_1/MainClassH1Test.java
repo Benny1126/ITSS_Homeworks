@@ -150,15 +150,4 @@ class MainClassH1Test {
                 "Nome o cognome non valido"); //P2
     }
 
-
-//    @Test
-//    public void dataNascitaNull() { // l. Casi in cui data di nascita è nulle oppure diversa da null
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 11, null),
-//                "dataNascita null"); //T29
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 11, Date.valueOf(LocalDate.parse("2012-05-05"))),
-//                "Mario Rossi non è maggiorenne!"); //T30
-//    }
-
 }
