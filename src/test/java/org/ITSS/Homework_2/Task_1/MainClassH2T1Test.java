@@ -11,66 +11,66 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainClassH2T1Test {
 
     // STRUCTURAL TEST
-//    @Test
-//    public void nomeCognomeNull() { // l. Casi in cui nome o cognome sono uguali a null:
-//        assertEquals(
-//                isMaggiorennePhrase(null, "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome o cognome null"); // T30
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", null, 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome o cognome null"); // T31
-//        assertEquals(
-//                isMaggiorennePhrase(null, null, 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome o cognome null"); // T32
-//    }
-//
-//    @Test
-//    public void nomeCognomeIsBlank() { // m. Casi in cui nome o cognome sono vuoti:
-//        assertEquals(
-//                isMaggiorennePhrase("", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome e/o cognome vuoto"); // T34
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome e/o cognome vuoto"); // T35
-//        assertEquals(
-//                isMaggiorennePhrase("", "", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
-//                "Nome e/o cognome vuoto"); // T36
-//    }
-//
-//    @Test
-//    public void dataNascitaNullAndNotNull() { // n. Casi in cui data di nascita è nulle oppure diversa da null:
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 11, null),
-//                "dataNascita null"); // T37
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 11, Date.valueOf(LocalDate.parse("2012-05-05"))),
-//                "Mario Rossi non è maggiorenne!"); // T38
-//    }
-//
-//    @Test
-//    public void meseGiornoEqualActualDate() { // o. Casi in cui data e mese inseriti sono uguali a quelli odierni:
-//        int giorno = LocalDate.now().getDayOfMonth();
-//        int mese = LocalDate.now().getMonthValue();
-//        String giornoStr, meseStr;
-//        if (giorno < 10)
-//            giornoStr = "0" + giorno;
-//        else
-//            giornoStr = String.valueOf(giorno);
-//        if (mese < 10)
-//            meseStr = "0" + mese;
-//        else
-//            meseStr = String.valueOf(mese);
-//
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 22, Date.valueOf(LocalDate.parse("2001-"+ meseStr + "-" + giornoStr))),
-//                "Buon compleanno Mario Rossi!"); // T39
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-" + giornoStr))),
-//                "Mario Rossi è maggiorenne!"); // T40
-//        assertEquals(
-//                isMaggiorennePhrase("Mario", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-" + meseStr + "-30"))),
-//                "Mario Rossi è maggiorenne!"); // T41
-//    }
+    @Test
+    public void nomeCognomeNull() { // l. Casi in cui nome o cognome sono uguali a null:
+        assertEquals(
+                isMaggiorennePhrase(null, "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome o cognome null"); // T30
+        assertEquals(
+                isMaggiorennePhrase("Mario", null, 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome o cognome null"); // T31
+        assertEquals(
+                isMaggiorennePhrase(null, null, 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome o cognome null"); // T32
+    }
+
+    @Test
+    public void nomeCognomeIsBlank() { // m. Casi in cui nome o cognome sono vuoti:
+        assertEquals(
+                isMaggiorennePhrase("", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome e/o cognome vuoto"); // T34
+        assertEquals(
+                isMaggiorennePhrase("Mario", "", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome e/o cognome vuoto"); // T35
+        assertEquals(
+                isMaggiorennePhrase("", "", 21, Date.valueOf(LocalDate.parse("2001-11-14"))),
+                "Nome e/o cognome vuoto"); // T36
+    }
+
+    @Test
+    public void dataNascitaNullAndNotNull() { // n. Casi in cui data di nascita è nulle oppure diversa da null:
+        assertEquals(
+                isMaggiorennePhrase("Mario", "Rossi", 11, null),
+                "dataNascita null"); // T37
+        assertEquals(
+                isMaggiorennePhrase("Mario", "Rossi", 11, Date.valueOf(LocalDate.parse("2012-05-05"))),
+                "Mario Rossi non è maggiorenne!"); // T38
+    }
+
+    @Test
+    public void meseGiornoEqualActualDate() { // o. Casi in cui data e mese inseriti sono uguali a quelli odierni:
+        int giorno = LocalDate.now().getDayOfMonth();
+        int mese = LocalDate.now().getMonthValue();
+        String giornoStr, meseStr;
+        if (giorno < 10)
+            giornoStr = "0" + giorno;
+        else
+            giornoStr = String.valueOf(giorno);
+        if (mese < 10)
+            meseStr = "0" + mese;
+        else
+            meseStr = String.valueOf(mese);
+
+        assertEquals(
+                isMaggiorennePhrase("Mario", "Rossi", 22, Date.valueOf(LocalDate.parse("2001-"+ meseStr + "-" + giornoStr))),
+                "Buon compleanno Mario Rossi!"); // T39
+        assertEquals(
+                isMaggiorennePhrase("Mario", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-" + giornoStr))),
+                "Mario Rossi è maggiorenne!"); // T40
+        assertEquals(
+                isMaggiorennePhrase("Mario", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-" + meseStr + "-30"))),
+                "Mario Rossi è maggiorenne!"); // T41
+    }
 
 
     // SPECIFICATION-BASED TEST E CASI DI TEST AGGIUNTIVI

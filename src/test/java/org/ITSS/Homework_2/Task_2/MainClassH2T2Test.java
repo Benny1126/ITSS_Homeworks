@@ -11,15 +11,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainClassH2T2Test {
 
-
-
     @Test
-    public void lenResultLessEqualZero() throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
-
+    public void lenResultLessEqualZero() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
         String[] nomi = {"Benedetto", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
 
@@ -33,23 +32,20 @@ class MainClassH2T2Test {
             squareCubeList(-2, 2, nomi, numeri);
         });
 
-
         //T03
-        assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
-
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
 
-
     @Test
-    public void differentLenghtNomiNumeri() throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void differentLenghtNomiNumeri() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
         String[] nomi = {"Benedetto", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
-
         String[] nomi3 = {"Benedetto", "Giovanni", "Mario"};
 
         //T04
@@ -63,20 +59,18 @@ class MainClassH2T2Test {
         });
 
         //T06
-       assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
-
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
 
-
     @Test
-    public void duplicatesNomi() throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void duplicatesNomi() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2, 1};
-
         String[] nomi = {"Benedetto", "Giovanni", "Mario"};
         String[] nomiDupl = {"Benedetto", "Giovanni", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
         result.add("Mario 1");
@@ -87,20 +81,18 @@ class MainClassH2T2Test {
         });
 
         //T08
-        assertEquals(squareCubeList(3,3,nomi,numeri), result);
-
-
+        assertEquals(squareCubeList(3, 3, nomi, numeri), result);
     }
 
-
-
     @Test
-    public void nomeContainsNumbers() throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void nomeContainsNumbers() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
         String[] nomi = {"Benedetto", "Giovanni"};
         String[] nomiNum = {"Benedetto2", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
 
@@ -110,21 +102,19 @@ class MainClassH2T2Test {
         });
 
         //T08
-        assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
 
-
-
     @Test
-    public void numberOffpoint() throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void numberOffpoint() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
         Integer[] numeri101 = {3, 105};
         Integer[] numeri0 = {3, 0};
-
         String[] nomi = {"Benedetto", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
 
@@ -139,21 +129,20 @@ class MainClassH2T2Test {
         });
 
         //T13
-        assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
 
-
     @Test
-    public void cubeSquareLimitsExceeded()throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void cubeSquareLimitsExceeded() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
         Integer[] numeriPariLimits = {10, 6};
         Integer[] numeriDispariLimits10 = {11, 5};
         Integer[] numeriDispariLimits7 = {7, 5};
-
         String[] nomi = {"Benedetto", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
 
@@ -172,21 +161,20 @@ class MainClassH2T2Test {
             squareCubeList(2, 2, nomi, numeriDispariLimits7);
         });
 
-        //T15 - T18
-        assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
+        //T15 = T18
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
 
-
     @Test
-    public void nomeNullOrEmpty()throws LenResultLessEqualZeroException, NomeContainsNumbersException, NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException, NomeNullException, DuplicatesNomiException {
+    public void nomeNullOrEmpty() throws LenResultLessEqualZeroException, NomeContainsNumbersException,
+            NumberOffpointException, CubeSquareLimitsExceededException, DifferentLenghtNomiNumeriException,
+            NomeNullException, DuplicatesNomiException {
 
         Integer[] numeri = {3, 2};
-
         String[] nomi = {"Benedetto", "Giovanni"};
         String[] nomiNull = {null, "Giovanni"};
         String[] nomiEmpty = {"", "Giovanni"};
-        ArrayList<String>  result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         result.add("Benedetto 27");
         result.add("Giovanni 4");
 
@@ -201,10 +189,7 @@ class MainClassH2T2Test {
         });
 
         //T21
-        assertEquals(squareCubeList(2,2,nomi,numeri), result);
-
-
+        assertEquals(squareCubeList(2, 2, nomi, numeri), result);
     }
-
 
 }

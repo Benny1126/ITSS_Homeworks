@@ -22,10 +22,8 @@ public class MainClassH2T2 {
      * @return ArrayList contenente la lista dei risultati dei quadrati e dei cubi
      *
      * @throws CubeSquareLimitsExceededException se il risultato supera i limiti predisposti;
-     * @throws NumberEqualZeroException se nella lista dei numeri vi è uno o più numeri uguali a zero;
      * @throws DifferentLenghtNomiNumeriException se la lista dei numeri e quella dei nomi hanno lunghezze differenti;
      * @throws LenResultLessEqualZeroException se il valore della lunghezza della lista dei nomi e/o numeri è minore o uguale a zero;
-     * @throws NegativeNumberException se nella lista dei numeri vi è uno o più numeri negativi;
      * @throws NumberOffpointException se il numero presente nella lista è maggiore o uguale a 100;
      * @throws NomeNullException se il nome null o blank;
      * @throws NomeContainsNumbersException se il nome contiene dei caratteri non validi;
