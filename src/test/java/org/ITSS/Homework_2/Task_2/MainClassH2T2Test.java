@@ -148,7 +148,7 @@ class MainClassH2T2Test {
 
         //T14
         assertThrows(CubeSquareLimitsExceededException.class, () -> {
-            squareCubeList(2, 2, nomi, numeriPariLimits);   //T13
+            squareCubeList(2, 2, nomi, numeriPariLimits);
         });
 
         //T16
@@ -180,12 +180,12 @@ class MainClassH2T2Test {
 
         //T19
         assertThrows(NomeNullException.class, () -> {
-            squareCubeList(2, 2, nomiEmpty, numeri); //T19 - T23
+            squareCubeList(2, 2, nomiEmpty, numeri);
         });
 
         //T20
         assertThrows(NomeNullException.class, () -> {
-            squareCubeList(2, 2, nomiNull, numeri);   //T13
+            squareCubeList(2, 2, nomiNull, numeri);
         });
 
         //T21

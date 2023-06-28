@@ -13,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class IvaProdottoTest {
 
-    private static int cntExceptionGen = 0;
     @Property(tries = 40)
     @Report(Reporting.GENERATED)
     @StatisticsReport(format = Histogram.class)

@@ -38,7 +38,7 @@ public class MainClassH2T2 {
         if (n != m || n != nomi.length)
             throw new DifferentLenghtNomiNumeriException();
 
-        for (int i = 0; i < nomi.length - 1; i++) // impostare nomi.lenght = 0 per non far verificare il ciclo
+        for (int i = 0; i < nomi.length - 1; i++)
             for (int j = i + 1; j < nomi.length; j++)
                 if (nomi[i] == nomi[j] && i != j)
                     throw new DuplicatesNomiException();
