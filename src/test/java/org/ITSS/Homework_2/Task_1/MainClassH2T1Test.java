@@ -62,7 +62,7 @@ class MainClassH2T1Test {
             meseStr = String.valueOf(mese);
 
         assertEquals(
-                isMaggiorennePhrase("Mario", "Rossi", 22, Date.valueOf(LocalDate.parse("2001-"+ meseStr + "-" + giornoStr))),
+                isMaggiorennePhrase("Mario", "Rossi", 22, Date.valueOf(LocalDate.parse("2001-" + meseStr + "-" + giornoStr))),
                 "Buon compleanno Mario Rossi!"); // T39
         assertEquals(
                 isMaggiorennePhrase("Mario", "Rossi", 21, Date.valueOf(LocalDate.parse("2001-11-" + giornoStr))),
@@ -185,9 +185,16 @@ class MainClassH2T1Test {
         assertEquals(
                 isMaggiorennePhrase("Mario", "Rossi", 0, Date.valueOf(LocalDate.now())),
                 "Buon compleanno Mario Rossi!"); //T24
+
+        // TODO
         assertEquals(
-                isMaggiorennePhrase("Mario", "Rossi", 0, Date.valueOf(LocalDate.parse("2020-07-07"))),
+                isMaggiorennePhrase("Mario", "Rossi", 0,
+                        Date.valueOf(LocalDate.now().minusMonths(1).minusYears(2))),
                 "Età non coincide con la data di nascita 2"); //T25
+
+//        assertEquals(
+//                isMaggiorennePhrase("Mario", "Rossi", 0, Date.valueOf(LocalDate.parse("2020-07-07"))),
+//                "Età non coincide con la data di nascita 2"); //T25
     }
 
     @Test
